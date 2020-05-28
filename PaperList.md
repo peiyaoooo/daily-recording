@@ -12,3 +12,13 @@ Enhancement
  - [x] Self-supervised Image Enhancement Network: Training with Low Light Images Only
       Description: process the image quickly; give the repeatbale results; based on Retinex-net;add the maximum channel assumption on the reflectance map-- the maximum channel of the enhanced image should conform to the histogram distribution of the maximum channel of the low light image after histogram equalization.
 
+
+# colorization:
+- [x] Pixel-level Semantics Guided Image Colorization [no-reference][plausible color][no code]
+      Description: combining with semantic segementation loss to get more robust color;joint bilinear lateral filter for edge preserving; calculate color probability for 313 potential values(classification label).
+
+- [x] Tracking Emerges by Colorizing Videos (ECCV18) [no code]
+      Description: 3 successive frames as the input reference color and output the fllowing fourth frame. The loss is dicrete categories loss and this work use k-means to quantize the color values  into 16 categories. And then the embedding of this model can be exploted to tracking and outperform the optical-flow based method.
+
+
+      
