@@ -20,8 +20,12 @@ Enhancement
 - [x] Tracking Emerges by Colorizing Videos (ECCV18) [no code]  
       Description: 3 successive frames as the input reference color and output the fllowing fourth frame. The loss is dicrete categories loss and this work use k-means to quantize the color values  into 16 categories. And then the embedding of this model can be exploted to tracking and outperform the optical-flow based method.
 
-- [x] Instance-aware Image Colorization [no-reference]
-      Description: detect N objects in advance and then colorize the full image and seperate object respectively. Finally, fuse the features of the  full image and local objects with the weighted map to output the final color images. use smooth L1 loss.  
+- [x] Instance-aware Image Colorization [no-reference]    
+      Description: detect N objects in advance and then colorize the full image and seperate object respectively. Finally, fuse the features of the  full image and local objects with the weighted map to output the final color images. use smooth L1 loss.    
+
+- [x] Deep Exemplar-based Video Colorization [example-based]   
+      Description: use vgg feature to calculate the correlation between  reference image's chrome channel and input gray image and then obtain the warped color information and the corresponding confidence map. Afterwards, the final output rgb image depends on the last rgb image, warped color information, confidence map and the current gray map. This work used many loss functions to supervise the result, from contextual, temporal, realistic view. Good work. 
+
      
      
       
