@@ -5,11 +5,11 @@ Enhancement
  - [x] MSR-net:Low-light Image Enhancement Using Deep Convolutional Network  
       Description: multi-scale logarithmatic processing for multi-scale retinex simultation; Analogy between convolution and difference of Gaussian; color restoration function with 1x1 conv; 
       - [x] have no idea why and how adopt log space?( learn the code later): maybe the log space for add operation.
- - [x] Deep Retinex Decomposition for Low-Light Enhancement  
+ - [x] Deep Retinex Decomposition for Low-Light Enhancement  [code][trial]
       Description: interersting work! decompose the image into constant reflectance and illumination and then enhance the illumation map to reconstruct the normal light image.
       - [x] try the code to find if any lighting condition: I tried to decompose the image with different exposure time and multiplied t1's reflectance and t2's illumination. Then the generated t2's(more light) have a bigger difference than the true t2's.
       - [x] This work deserves reading as the concept is simple and easy to apply. Many successive work based on it.
- - [x] Self-supervised Image Enhancement Network: Training with Low Light Images Only  
+ - [x] Self-supervised Image Enhancement Network: Training with Low Light Images Only 
       Description: process the image quickly; give the repeatbale results; based on Retinex-net;add the maximum channel assumption on the reflectance map-- the maximum channel of the enhanced image should conform to the histogram distribution of the maximum channel of the low light image after histogram equalization.
 
 
@@ -26,6 +26,10 @@ Enhancement
 - [x] Deep Exemplar-based Video Colorization [example-based]   
       Description: use vgg feature to calculate the correlation between  reference image's chrome channel and input gray image and then obtain the warped color information and the corresponding confidence map. Afterwards, the final output rgb image depends on the last rgb image, warped color information, confidence map and the current gray map. This work used many loss functions to supervise the result, from contextual, temporal, realistic view. Good work. 
 
+
+# alignment:
+- [x] When Deep Learning Meets Data Alignment: A Review on Deep Registration Networks(DRNs)  
+      Description: a review for data alignment. Maybe 3D data alignment  dominates the paper. Provide a list of data alignment paper and summary them in categories with the module constitution: CNN, deformable transformation, voxel, mesh?( some points I remembered). Emmm. I think maybe I need to read specific paper to know some new ideas.
      
      
       
