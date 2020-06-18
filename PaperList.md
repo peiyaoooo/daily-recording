@@ -29,7 +29,12 @@ Enhancement
 
 # alignment:
 - [x] When Deep Learning Meets Data Alignment: A Review on Deep Registration Networks(DRNs)  
-      Description: a review for data alignment. Maybe 3D data alignment  dominates the paper. Provide a list of data alignment paper and summary them in categories with the module constitution: CNN, deformable transformation, voxel, mesh?( some points I remembered). Emmm. I think maybe I need to read specific paper to know some new ideas.
+      Description: a review for data alignment. Maybe 3D data alignment  dominates the paper. Provide a list of data alignment paper and summary them in categories with the module constitution: CNN, deformable transformation, voxel, mesh?( some points I remembered). Emmm. I think maybe I need to read specific paper to know some new ideas.  
+      
+# frame interpolation  
+- [x] Channel Attention Is All You Need for Video Frame Interpolation  
+     Description: a method for **intermediate frame interpolation**; combine the start and end frame to obtain the intermediate frame from pixel level. Directly output the predicted pixel rather than the optical flow which reduces the complexity and cost time. It leverages the pixel shuffle to covert the spatial information into channel dimension and then calculate the channel attention for better prediction. Nice job.
+
      
      
       
