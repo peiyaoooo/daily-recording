@@ -39,11 +39,34 @@ Enhancement
    Description: flownet module calculates  the flow and evaluate the input frames' influence on output image via the gradient map. end2end pixel generation concept.
 
 - [x] Video Frame Interpolation via Adaptive Separable Convolution (17)    
-   Description: separate the large 2D convolutional kernel into two 1D kernel for compact representation of large motion. Reduce the parameters for estimation. Directly generate the pixel
+   Description: separate the large 2D convolutional kernel into two 1D kernel for compact representation of large motion. Reduce the parameters for estimation. Directly generate the pixel    
+   Github: https://github.com/sniklaus/sepconv-slomo   
+   
+- [x] Video Frame Synthesis using Deep Voxel Flow(17)    
+   Description: encoder-decoder framework to calculate the voxel flow ( the referenced position in the given frames) and then warp.Multi-sacle flow. Multi-step concept is to predict the next D frames rather than single frame.    
+
+- [x] Super SloMo: High Quality Estimation of Multiple Intermediate Frames or Video Interpolation (18)  
+   Description: U-net module for flow estimation and impose the probability map for the forward and backward flow. linearly interpolate the frames according to the time interval.    
+   webpage: http://jianghz.me/projects/superslomo   
+
+- [ ] MEMC-Net: Motion Estimation and Motion Compensation Driven Neural Network for Video Interpolation and Enhancement  
+  github: https://github.com/baowenbo/MEMC-Net  
+  
+- [ ] Space-Time-Aware Multi-Resolution Video Enhancement    
+  github: https://github.com/alterzero/STARnet  
+  
+ 
+
+
+
+  
+   
+ 
      
 # super resolution  
 - [x]   Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video  Super-Resolution      
      Description: generate the high resolution high frame rate results. leverage deformable mechanism to extract information. Deformable conv to obtain lf lr's feature and then deformable convLSTM for temporal information interpolation. Then exploit resblock groups to super resolution. One stage pipeline.(Different from others)
+     Github:https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020/tree/4cc771888c9944ad61ba73295ac0dcafa557b7e8
 
 
 
