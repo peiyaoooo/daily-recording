@@ -32,14 +32,18 @@ Enhancement
       Description: a review for data alignment. Maybe 3D data alignment  dominates the paper. Provide a list of data alignment paper and summary them in categories with the module constitution: CNN, deformable transformation, voxel, mesh?( some points I remembered). Emmm. I think maybe I need to read specific paper to know some new ideas.  
       
 # frame interpolation  
-- [x] Channel Attention Is All You Need for Video Frame Interpolation  (20)
+- [x] Channel Attention Is All You Need for Video Frame Interpolation  (20)    
      Description: a method for **intermediate frame interpolation**; combine the start and end frame to obtain the intermediate frame from pixel level. Directly output the predicted pixel rather than the optical flow which reduces the complexity and cost time. It leverages the pixel shuffle to covert the spatial information into channel dimension and then calculate the channel attention for better prediction. Nice job.
 
-- [x] Learning Image Matching by Simply Watching Video  (16)
+- [x] Learning Image Matching by Simply Watching Video  (16)    
    Description: flownet module calculates  the flow and evaluate the input frames' influence on output image via the gradient map. end2end pixel generation concept.
+
+- [x] Video Frame Interpolation via Adaptive Separable Convolution (17)    
+   Description: separate the large 2D convolutional kernel into two 1D kernel for compact representation of large motion. Reduce the parameters for estimation. Directly generate the pixel
      
-     
-      
+# super resolution  
+- [x]   Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video  Super-Resolution      
+     Description: generate the high resolution high frame rate results. leverage deformable mechanism to extract information. Deformable conv to obtain lf lr's feature and then deformable convLSTM for temporal information interpolation. Then exploit resblock groups to super resolution. One stage pipeline.(Different from others)
 
 
 
