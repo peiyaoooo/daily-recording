@@ -2,15 +2,15 @@
  - [x] LLNet: A Deep Autoencoder approach to Natural Low-light Image
 Enhancement  
       Description: the early learning based work of low illumination image enhancement; simulated dark datasets; conventional methods comparison. 
- - [x] MSR-net:Low-light Image Enhancement Using Deep Convolutional Network  
+ - [x] MSR-net:Low-light Image Enhancement Using Deep Convolutional Network     
       Description: multi-scale logarithmatic processing for multi-scale retinex simultation; Analogy between convolution and difference of Gaussian; color restoration function with 1x1 conv; 
       - [x] have no idea why and how adopt log space?( learn the code later): maybe the log space for add operation.
- - [x] Deep Retinex Decomposition for Low-Light Enhancement  [code][trial]
+ - [x] Deep Retinex Decomposition for Low-Light Enhancement  [code][trial]  
       Description: interersting work! decompose the image into constant reflectance and illumination and then enhance the illumation map to reconstruct the normal light image.
       - [x] try the code to find if any lighting condition: I tried to decompose the image with different exposure time and multiplied t1's reflectance and t2's illumination. Then the generated t2's(more light) have a bigger difference than the true t2's.
       - [x] This work deserves reading as the concept is simple and easy to apply. Many successive work based on it.
- - [x] Self-supervised Image Enhancement Network: Training with Low Light Images Only 
-      Description: process the image quickly; give the repeatbale results; based on Retinex-net;add the maximum channel assumption on the reflectance map-- the maximum channel of the enhanced image should conform to the histogram distribution of the maximum channel of the low light image after histogram equalization.
+ - [x] Self-supervised Image Enhancement Network: Training with Low Light Images Only      
+      Description: process the image quickly; give the repeatbale results; based on Retinex-net;add the maximum channel assumption on the reflectance map-- the maximum channel of the enhanced image should conform to the histogram distribution of the maximum channel of the low light image after histogram equalization.  
 
 
 # colorization:
@@ -23,7 +23,7 @@ Enhancement
 - [x] Instance-aware Image Colorization [no-reference]    
       Description: detect N objects in advance and then colorize the full image and seperate object respectively. Finally, fuse the features of the  full image and local objects with the weighted map to output the final color images. use smooth L1 loss.    
 
-- [x] Deep Exemplar-based Video Colorization [example-based]   
+- [x] Deep Exemplar-based Video Colorization [example-based]     
       Description: use vgg feature to calculate the correlation between  reference image's chrome channel and input gray image and then obtain the warped color information and the corresponding confidence map. Afterwards, the final output rgb image depends on the last rgb image, warped color information, confidence map and the current gray map. This work used many loss functions to supervise the result, from contextual, temporal, realistic view. Good work. 
 
 
@@ -57,6 +57,14 @@ Enhancement
   
  
 
+# optical flow estimation  
+- [ ] Learning by Analogy: Reliable Supervision from Transformations
+for Unsupervised Optical Flow Estimation  
+- [ ] Flownet  
+- [ ] Flownet2
+- [x]PWCnet   
+- [ ] IRR-PWC  
+
 
 
   
@@ -66,7 +74,11 @@ Enhancement
 # super resolution  
 - [x]   Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video  Super-Resolution      
      Description: generate the high resolution high frame rate results. leverage deformable mechanism to extract information. Deformable conv to obtain lf lr's feature and then deformable convLSTM for temporal information interpolation. Then exploit resblock groups to super resolution. One stage pipeline.(Different from others)
-     Github:https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020/tree/4cc771888c9944ad61ba73295ac0dcafa557b7e8
+     Github:https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020/tree/4cc771888c9944ad61ba73295ac0dcafa557b7e8  
+
+- [x] Learning Parallax Attention for Stereo Image Super-Resolution    
+ Description: combine stereo low resolution images to interpolate high resolution images. Pixel shift is benefit to learn pixel value distribution rule. And in the feature  extraction, this proposal concats features filtered via different receptive fields. And in the warp session, the consistent loss and cycle loss exploits the the warped image is similar to the origin one and double warp images identify the origin one. 
+
 
 
 
