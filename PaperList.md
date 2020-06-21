@@ -61,8 +61,8 @@ Enhancement
 - [ ] Learning by Analogy: Reliable Supervision from Transformations
 for Unsupervised Optical Flow Estimation  
 - [ ] Flownet  
-- [ ] Flownet2
-- [x]PWCnet   
+- [ ] Flownet2  
+- [x] PWCnet   
 - [ ] IRR-PWC  
 
 
@@ -80,6 +80,9 @@ for Unsupervised Optical Flow Estimation
  Description: combine stereo low resolution images to interpolate high resolution images. Pixel shift is benefit to learn pixel value distribution rule. And in the feature  extraction, this proposal concats features filtered via different receptive fields. And in the warp session, the consistent loss and cycle loss exploits the the warped image is similar to the origin one and double warp images identify the origin one. 
 
 
+- [ ] Learning Texture Transformer Network for Image Super-Resolution[ref-sr]
+
+- [ ] cross-net[ref-sr]
 
 
       
