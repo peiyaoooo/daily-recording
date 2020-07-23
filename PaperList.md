@@ -90,7 +90,7 @@ for Unsupervised Optical Flow Estimation
 Description: the procedure could be divided into the isp and fusion. This work generates the LDR images with different exposure and then fuse them to  output the final prediction in an end-to-end way. The author refers that the pre-alignment in raw space may result in the irreparable wrong signal which could not be handled in the last fusion network. And its presented result evidences this assumption. The network of this work is based on resblocks and different exposure image are concated and followed with conv 7x7,5x5,3x3,1x1.
 
 ## color constancy
--[x] A Multi-Hypothesis Approach to Color Constancy  
+- [x] A Multi-Hypothesis Approach to Color Constancy    
 Description: the AWB processing for the raw images. Convert the raw images to the 2-dimension(Nx2) vectors (b/g, r/g) and then choose several candiates to adjust the tone (diag(l_i)^-1Y) for several hidden versions. And then calculate the probability of different candidates and optimize their expectation with MSE loss for the final out. Note that 
 the log-posterior probability can be formulated as:$$log(P(l|Y}}= G_l \cdot log(P(Y|l))+B_l$$. Learn how to write a story.  
 [code] : https://github.com/huawei-noah/multi_hyp_cc/tree/2377430f528aea2fb6d4fd4e861d9196e00a94d9  
