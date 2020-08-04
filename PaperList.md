@@ -72,6 +72,12 @@ for Unsupervised Optical Flow Estimation
  
      
 # super resolution  
+- [x] Invertible Image Rescaling    
+Description： [an interesting work with the independent probability usage]. First, exploit the Harr Transformation to decompose the image into low and high frequency information which resembles the bicubic-downsampling image. Then generage the case-independent high frequency probability with GAN and then reconstruct the high resolution image. The distribution loss is to describe the data distribution betweent the reconstructed image and orgin HR image
+ 
+
+
+
 - [x]   Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video  Super-Resolution      
      Description: generate the high resolution high frame rate results. leverage deformable mechanism to extract information. Deformable conv to obtain lf lr's feature and then deformable convLSTM for temporal information interpolation. Then exploit resblock groups to super resolution. One stage pipeline.(Different from others)
      Github:https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020/tree/4cc771888c9944ad61ba73295ac0dcafa557b7e8  
