@@ -92,10 +92,13 @@ Description: the procedure could be divided into the isp and fusion. This work g
 ## color constancy
 - [x] A Multi-Hypothesis Approach to Color Constancy    
 Description: the AWB processing for the raw images. Convert the raw images to the 2-dimension(Nx2) vectors (b/g, r/g) and then choose several candiates to adjust the tone (diag(l_i)^-1Y) for several hidden versions. And then calculate the probability of different candidates and optimize their expectation with MSE loss for the final out. Note that 
-the log-posterior probability can be formulated as:$$log(P(l|Y}}= G_l \cdot log(P(Y|l))+B_l$$. Learn how to write a story.  
+the log-posterior probability can be formulated as:$$log(P(l|Y}}= G_l \cdot log(P(Y|l))+B_l$$. Learn how to write a story. ** should try the code**  
 [code] : https://github.com/huawei-noah/multi_hyp_cc/tree/2377430f528aea2fb6d4fd4e861d9196e00a94d9  
 
 
+# multiview video enhancement  
+- [x] Multiview video quality enhancement without depth information  
+Description: Fuse the image pair with the high compression quality and low compression quality without the aid of depth or disparity in an end-to-end framework. Averaged 2 dB higher than HEVC when QP=50.  
 
 
       
