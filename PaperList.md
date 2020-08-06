@@ -75,7 +75,8 @@ for Unsupervised Optical Flow Estimation
 - [x] Invertible Image Rescaling    
 Description： [an interesting work with the independent probability usage]. First, exploit the Harr Transformation to decompose the image into low and high frequency information which resembles the bicubic-downsampling image. Then generage the case-independent high frequency probability with GAN and then reconstruct the high resolution image. The distribution loss is to describe the data distribution betweent the reconstructed image and orgin HR image
  
-
+- [x] Learning for Video Super-Resolution through HR Optical Flow Estimation    
+Description: Super resolve the coarse optical flow into fine optical flow at the high resolution and then pixelshuffle the warped HR images in LR cubes.  Fuse these referenced cubes and LR frames to generate the HR frames. The framework is compact and easy to use. [try this code]
 
 
 - [x]   Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video  Super-Resolution      
