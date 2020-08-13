@@ -64,6 +64,8 @@ for Unsupervised Optical Flow Estimation
 - [ ] Flownet2  
 - [x] PWCnet   
 - [ ] IRR-PWC  
+- [x] Optical Flow in the Dark  
+  Description: It claims that could calculate the optical flow from underexposed pairs and have a better performance than the enhanced one which doesn't make sense to me. But many details are not clearly introduced in the paper. Wait for multi-exposure datasets and the pretrained model with their datasets.They provide a Gaussian-Possion-hybird noise model in this work and measure the noise level with a standard.
 
 
 
