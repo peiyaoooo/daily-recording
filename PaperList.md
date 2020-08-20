@@ -93,10 +93,15 @@ Description: Super resolve the coarse optical flow into fine optical flow at the
 
 - [ ] cross-net[ref-sr]
 
-# raw image processing
-## HDR
-- [x] Merging-ISP: Multi-Exposure High Dynamic Range Image Signal Processing  
+# HDR
+- [x] Merging-ISP: Multi-Exposure High Dynamic Range Image Signal Processing  (raw data)
 Description: the procedure could be divided into the isp and fusion. This work generates the LDR images with different exposure and then fuse them to  output the final prediction in an end-to-end way. The author refers that the pre-alignment in raw space may result in the irreparable wrong signal which could not be handled in the last fusion network. And its presented result evidences this assumption. The network of this work is based on resblocks and different exposure image are concated and followed with conv 7x7,5x5,3x3,1x1.
+
+- [x] Deep HDR Video from Sequences with Alternating Exposures  
+Description: align  the medium exposure (ME) frame to the low/high exposure frame (LE/HE) and then merge the aligned frames and origin frames with the learned weight to generate the HDR image. The flow estimaiton resembles to SPYnet and add some tone perturbations for robust performance. But the output aligned frame is warped via the raw frame.
+
+
+# raw image processing
 
 ## color constancy
 - [x] A Multi-Hypothesis Approach to Color Constancy    
