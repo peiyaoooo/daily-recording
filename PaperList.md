@@ -12,6 +12,16 @@ Enhancement
  - [x] Self-supervised Image Enhancement Network: Training with Low Light Images Only      
       Description: process the image quickly; give the repeatbale results; based on Retinex-net;add the maximum channel assumption on the reflectance map-- the maximum channel of the enhanced image should conform to the histogram distribution of the maximum channel of the low light image after histogram equalization.  
 
+- [x] Zero-Reference Deep Curve Estimation for Low-Light Image Enhancement     
+      Description: exploit cnn framework to generate pixel-wised adjustment matrix for high order adjustment function. Recursively iterate the function: LE(I(x);\Alpha) = I(x)+\Alpha I(x)(1-I(x)) about 8 times for output the final reconstruction. The losses they proposed are novel which are used to limit the function. For avoiding the overexposure, they add the overexposure photo to train this network. Good work. [https://li-chongyi.github.io/Proj_Zero-DCE.html/]  
+      
+
+# multi-frame Low illumination image enhancemnt     
+ - [x] Dynamic Low-light Imaging with Quanta Image Sensors     
+       Description: Exploit multi-frame of images captured via quanta image sensors to reconstruct the scene, which show better performance than normal sensorin extremely low-light condition. This work proposed the teacher-student strategy to guide the encoder's performance. The strategy is aimed to make encoder-extracted features of clean and noisy images similar. The performance is impressive but still a little blurry in local details.
+
+ 
+
 
 # colorization:
 - [x] Pixel-level Semantics Guided Image Colorization [no-reference][plausible color][no code]  
@@ -115,4 +125,8 @@ the log-posterior probability can be formulated as:$$log(P(l|Y}}= G_l \cdot log(
 Description: Fuse the image pair with the high compression quality and low compression quality without the aid of depth or disparity in an end-to-end framework. Averaged 2 dB higher than HEVC when QP=50.  
 
 
-      
+# Network basis
+- [x] Making Convolutional Networks Shift-Invariant Again   
+Description: from my point of view, he proposed a method for anti-alias interpolation with convolutions. The key is to keep the upsampling or downsampling in a reproducable and reliable way.
+
+
