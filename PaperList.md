@@ -110,6 +110,9 @@ Description: the procedure could be divided into the isp and fusion. This work g
 - [x] Deep HDR Video from Sequences with Alternating Exposures  
 Description: align  the medium exposure (ME) frame to the low/high exposure frame (LE/HE) and then merge the aligned frames and origin frames with the learned weight to generate the HDR image. The flow estimaiton resembles to SPYnet and add some tone perturbations for robust performance. But the output aligned frame is warped via the raw frame.
 
+- [x] Deep SR-ITM: Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications   
+Description: fuse SR and tone-mapping in the pipeline. And firstly the work divides the image into the base image and detailed image and then learn the residual between the hdr GT and bicubic-upsampled sdr. Here, there are some confusion on the residual. The gap bewteen the sdr and hdr. Emmmm.  
+
 
 # raw image processing
 
@@ -124,9 +127,16 @@ the log-posterior probability can be formulated as:$$log(P(l|Y}}= G_l \cdot log(
 - [x] Multiview video quality enhancement without depth information  
 Description: Fuse the image pair with the high compression quality and low compression quality without the aid of depth or disparity in an end-to-end framework. Averaged 2 dB higher than HEVC when QP=50.  
 
+- [x] Blind Video Temporal Consistency via Deep Video Prior  
+Description: propose a constraint to limit the temporal consistency and only need to train the first frame to acknowledge the input distribution of the videos. An confidence map is used to fuse the mainly-true prediction and the minorly-true prediction. The idea seems similar to tripet loss. Maybe I should use the module in the code.
 
 # Network basis
 - [x] Making Convolutional Networks Shift-Invariant Again   
 Description: from my point of view, he proposed a method for anti-alias interpolation with convolutions. The key is to keep the upsampling or downsampling in a reproducable and reliable way.
+
+- [x] CBAM: Convolutional Block Attention Module  
+Description: introduce the spatial and channel attention module and obtatin the conclusion that  the
+channel-first order performs slightly better than the spatial-first order.   
+
 
 
