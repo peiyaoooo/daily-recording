@@ -138,5 +138,8 @@ Description: from my point of view, he proposed a method for anti-alias interpol
 Description: introduce the spatial and channel attention module and obtatin the conclusion that  the
 channel-first order performs slightly better than the spatial-first order.   
 
+# Point cloud
+## Point cloud quality assessment
+- [x] a paper related to energy
 
 
