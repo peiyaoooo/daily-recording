@@ -11,3 +11,4 @@ A partial summary of some paper I read . More details could be found as below. W
 - [raw image processing](https://github.com/peiyaoooo/daily-recording/blob/master/PaperList.md#raw-image-processing)
 - [multiview video enhancement](https://github.com/peiyaoooo/daily-recording/blob/master/PaperList.md#multiview-video-enhancement)
 - [Network basis](https://github.com/peiyaoooo/daily-recording/blob/master/PaperList.md#network-basis)
+- [Point cloud](https://github.com/peiyaoooo/daily-recording/blob/master/PaperList.md#point-cloud)
