@@ -130,7 +130,10 @@ Description: Fuse the image pair with the high compression quality and low compr
 - [x] Blind Video Temporal Consistency via Deep Video Prior  
 Description: propose a constraint to limit the temporal consistency and only need to train the first frame to acknowledge the input distribution of the videos. An confidence map is used to fuse the mainly-true prediction and the minorly-true prediction. The idea seems similar to tripet loss. Maybe I should use the module in the code.
 
-# Network basis
+# novel view synthesis
+- [x] Stereo Magnification: Learning view synthesis using multiplane images  
+Description: propose the concept of the MPI to blend the input image for view synthesis. Add camera parameters and image pairs for training. Interesting work! ** should try the code **
+# network basis
 - [x] Making Convolutional Networks Shift-Invariant Again   
 Description: from my point of view, he proposed a method for anti-alias interpolation with convolutions. The key is to keep the upsampling or downsampling in a reproducable and reliable way.
 
@@ -138,7 +141,7 @@ Description: from my point of view, he proposed a method for anti-alias interpol
 Description: introduce the spatial and channel attention module and obtatin the conclusion that  the
 channel-first order performs slightly better than the spatial-first order.   
 
-# Point cloud
+# point cloud
 ## Point cloud quality assessment
 - [x] a paper related to energy
 
